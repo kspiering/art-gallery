@@ -1,0 +1,26 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/api/user
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer{{token}}
+}
+
+body:json {
+  {
+      "firstname": "Dominic",
+    "lastname": "Meyer",
+    "email": "dominic.test@gmx.ch",
+    "password": "test1234",
+    "password_confirmation": "test1234"
+   
+  }
+}

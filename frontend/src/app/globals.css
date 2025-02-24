@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #272626;
+  margin-bottom: 1.25rem; /* 16px */
+  font-weight: bold;
+} 
+
+h1 {
+ font-size: 24px;
+} 
+h2 {
+  font-size: 20px;
+} 
+h3 {
+  font-size: 18px;
+} 
+h4 {
+  font-size: 16px;
+} 
+
+p {
+  font-size: 14px;
+} 
+
+
+@layer base {
+  :root {
+    --background:#fffbf1 ;     /* Helles Beige */
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 24 9.8% 10%;
+    --primary-foreground: 60 9.1% 97.8%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 20 14.3% 4.1%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+}
+
+@layer base {
+  * {
+    border: 0.5px solidrgb(42, 41, 41)k;
+  }
+  body {
+   background-color: var(--background);
+  }
+}
+
+.editor ul {
+  list-style-type: disc; /* Display bullet points */
+  padding-left: 1.5rem; /* Add indentation */
+}
+
+.editor li {
+  margin-bottom: 0.15rem;
+}
+

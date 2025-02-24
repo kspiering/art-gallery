@@ -1,0 +1,28 @@
+meta {
+  name: update
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{baseUrl}}/api/events
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer{{token}}
+}
+
+body:json {
+    {
+        "id": 2,
+     "title": "Erfahrungen Schweiz – Wasserkraft und Widerstand",
+    "content": "Videoinstallation zu Wasserkraftprojekten in den Alpen.",
+    "longDescription": "Die Videoinstallation beleuchtet die wirtschaftliche Dynamik, politischen Auseinandersetzungen und logistischen Herausforderungen beim Bau von Staudämmen in den 1950er Jahren. Zeitzeugen berichten von ihren Erfahrungen rund um die Wasserkraft in den Alpen.",
+    "location": "Landesmuseum Zürich",
+    "date": "2025-11-10",
+    "time": "12:15",
+    "address": "Museumstrasse 2, 8001 Zürich"
+      }
+}

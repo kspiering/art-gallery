@@ -1,0 +1,25 @@
+meta {
+  name: create
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/user
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer{{token}}
+}
+
+body:json {
+  {
+    "firstname": "Kim",
+    "lastname": "Spiering",
+    "email": "kim.spiering@gmx.ch",
+    "password": "test1234",
+    "password_confirmation": "test1234"
+  }
+}

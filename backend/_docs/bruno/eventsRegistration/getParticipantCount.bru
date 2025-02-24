@@ -1,0 +1,21 @@
+meta {
+  name: getParticipantCount
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api/participant-count
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer{{token}}
+}
+
+body:json {
+  {
+    "event_id": "1"
+  }
+}

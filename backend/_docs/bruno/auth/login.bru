@@ -1,0 +1,23 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+     "email": "kim.spiering@gmx.ch",
+    "password": "test1234"
+  }
+  
+}
+
+vars:post-response {
+  token: res.body.token
+}

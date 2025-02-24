@@ -1,0 +1,22 @@
+meta {
+  name: deregister
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{baseUrl}}/api/eventRegistrations
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer{{token}}
+}
+
+body:json {
+  {
+    "email": "kim.spiering@gmx.ch",
+    "event_id": 1
+  }
+}

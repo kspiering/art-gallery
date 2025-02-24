@@ -1,0 +1,23 @@
+meta {
+  name: getUserRegisteredEvents
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/api/user-registered-events
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer{{token}}
+}
+
+body:json {
+  {
+    "name": "Get User Registered Events"
+  
+    
+  }
+}

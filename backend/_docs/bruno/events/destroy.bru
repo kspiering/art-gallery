@@ -1,0 +1,21 @@
+meta {
+  name: destroy
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/api/events
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{token}}
+}
+
+body:json {
+    {
+        "id": 5
+      }
+}

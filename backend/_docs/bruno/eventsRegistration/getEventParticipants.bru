@@ -1,0 +1,23 @@
+meta {
+  name: getEventParticipants
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/api/event-participants
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer{{token}}
+}
+
+body:json {
+  {
+    "event_id": "1"
+  
+    
+  }
+}
