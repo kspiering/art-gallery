@@ -19,6 +19,7 @@ Diese Anleitung hilft dir dabei, das Projekt lokal auf deinem Rechner zum Laufen
 - Next.js
 - NextAuth.js
 - Shadcn UI
+- TypeScript
 
 ## Installation
 
